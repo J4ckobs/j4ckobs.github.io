@@ -2,14 +2,50 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Moja Strona i Hub Linków</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hub & Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h1>Cześć! To moja strona.</h1>
-    <p>Oto moje linki i portfolio:</p>
-    <ul>
-        <li><a href="https://linkedin.com">Mój LinkedIn</a></li>
-        <li><a href="https://drive.google.com">Mój Google Drive (Dostęp na zaproszenie)</a></li>
-    </ul>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex items-center justify-center p-4">
+    <div class="w-full max-width-md max-w-lg space-y-8 my-8">
+        <header class="text-center space-y-3">
+            <div class="w-20 h-20 bg-gradient-to-tr from-cyan-500 to-sky-400 rounded-full flex items-center justify-center font-bold text-2xl text-slate-950 mx-auto shadow-lg shadow-cyan-500/20 animate-bounce">
+                N
+            </div>
+            <h1 class="text-2xl font-bold tracking-tight">Twoje Imię</h1>
+            <p class="text-slate-400 text-sm">UI/UX Designer & Content Creator</p>
+        </header>
+        <section class="space-y-3">
+            <h2 class="text-xs uppercase font-semibold text-cyan-400 tracking-wider">Moje Linki</h2>
+            <a href="https://linkedin.com" target="_blank" class="flex items-center justify-between p-4 bg-slate-900/80 border border-cyan-500/20 rounded-xl hover:border-cyan-400 hover:bg-slate-900 transition-all duration-300 group shadow-sm hover:-translate-y-0.5">
+                <div>
+                    <div class="font-medium">LinkedIn</div>
+                    <div class="text-xs text-slate-400">Mój profil zawodowy</div>
+                </div>
+                <span class="text-cyan-400 group-hover:translate-x-1 transition-transform">↗</span>
+            </a>
+
+            <a href="https://github.com" target="_blank" class="flex items-center justify-between p-4 bg-slate-900/80 border border-cyan-500/20 rounded-xl hover:border-cyan-400 hover:bg-slate-900 transition-all duration-300 group shadow-sm hover:-translate-y-0.5">
+                <div>
+                    <div class="font-medium">GitHub</div>
+                    <div class="text-xs text-slate-400">Kod i projekty</div>
+                </div>
+                <span class="text-cyan-400 group-hover:translate-x-1 transition-transform">↗</span>
+            </a>
+        </section>
+        <section class="space-y-3">
+            <h2 class="text-xs uppercase font-semibold text-cyan-400 tracking-wider">Portfolio</h2>
+            <a href="portfolio.html" class="flex items-center justify-between p-4 bg-slate-900/80 border border-cyan-500/20 rounded-xl hover:border-cyan-400 hover:bg-slate-900 transition-all duration-300 group shadow-sm hover:-translate-y-0.5">
+                <div>
+                    <div class="font-medium">Zobacz Prace</div>
+                    <div class="text-xs text-slate-400">Dedykowana podstrona</div>
+                </div>
+                <span class="text-cyan-400 group-hover:translate-x-1 transition-transform">→</span>
+            </a>
+        </section>
+        <footer class="text-center text-xs text-slate-500">
+            © 2026 • GitHub Pages
+        </footer>
+    </div>
 </body>
 </html>
